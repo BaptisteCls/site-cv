@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.8">
+  <title>Accueil - Mon profil</title>
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="//db.onlinewebfonts.com/c/75914226e45d53c888d99c55e1033690?family=Ubisoft+Sans" rel="stylesheet" type="text/css"/>
+  <link rel="shortcut icon" href="./images/logo/logo.png" type="image/x-icon">
+</head>
+<script src="./js/menu.js"></script>
+<script src="./js/slider.js"></script>
+<body>
+    <header>
+        <div><img onclick="location.href='index.html';" src="./images/logo/titre.png" alt="UbiSoftMobilities"></div>
+        <div>
+            <div><h1><i class="fa-regular fa-user"></i> PROFIL</h1>
+                <nav>
+                    <div>
+                        <h2 onclick="location.href='trajets.php';">Présentation<i class="fa-solid fa-chevron-right"></i></h2>
+                        <h2 onclick="location.href='proposer-trajet.php';">Expérience professionnelle<i class="fa-solid fa-chevron-right"></i></h2>
+                        <h2 onclick="location.href='mes-trajets.php';">Compétence<i class="fa-solid fa-chevron-right"></i></h2>
+                        <h2 onclick="location.href='historique-trajets.php';">Éducation<i class="fa-solid fa-chevron-right"></i></h2>
+                        <h2 onclick="location.href='info-covoiturage.php';">Loisirs<i class="fa-solid fa-chevron-right"></i></h2>
+                    </div>
+                </nav>
+            </div>
+            <div><h1><i class="fa-regular fa-file"></i> MES PROJETS</h1>
+                <nav>
+                    <div>
+                        <h2 onclick="location.href='location.php';">Louer<i class="fa-solid fa-chevron-right"></i></h2>
+                        <h2 onclick="location.href='proposer-location.php';">Proposer une location<i class="fa-solid fa-chevron-right"></i></h2>
+                        <h2 onclick="location.href='mes-locations.php';">Mes locations<i class="fa-solid fa-chevron-right"></i></h2>
+                        <h2 onclick="location.href='historique-location.php';">Historique<i class="fa-solid fa-chevron-right"></i></h2>
+                        <h2 onclick="location.href='info-location.php';">Infos<i class="fa-solid fa-chevron-right"></i></h2>
+                    </div>
+                </nav>
+            </div>
+            <div><h1><i class="fa-regular fa-envelope"></i> CONTACT</h1>
+                <nav>
+                    <div>
+                        <h2 onclick="location.href='contact.php';">Contact<i class="fa-solid fa-chevron-right"></i></h2>
+                        <h2 onclick="location.href='faq.php';">FAQ<i class="fa-solid fa-chevron-right"></i></h2>
+                        <h2 onclick="location.href='accessibilite.php';">Accessibilité<i class="fa-solid fa-chevron-right"></i></h2>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div></div>
+    </header>    
+    <div onclick="monter()" class="monter" id="monter">
+        <i class="fa-regular fa-circle-up"></i>
+    </div>
+    <div class="slider" id="slider">
+      <img src="./images/decor1.jpg" alt="tg1" class="img_slider">
+      <img src="./images/decor2.jpg" alt="tg2" class="img_slider">
+      <img src="./images/decor3.jpg" alt="tg3" class="img_slider">
+      <div class="suivant" onclick="imageSuivante()"><i class="fas fa-chevron-circle-right"></i></div>
+      <div class="precedent" onclick="imagePrecedente()"><i class="fas fa-chevron-circle-left"></i></div>
+      <div>
+          <div onclick="imgSlide(0)" class="point"><i class="fas fa-regular fa-circle"></i></div>
+          <div onclick="imgSlide(1)" class="point"><i class="fas fa-light fa-circle"></i></div>
+          <div onclick="imgSlide(2)" class="point"><i class="fas fa-light fa-circle"></i></div>
+      </div>
+  </div>
+  <div id="annonce">
+    <h1>UbiSofT Mobilities, les moyens de transport de demain</h1>
+  </div>
+  <div id="haut">   
+    <h1>Ubisoft Mobilities c'est...</h1>
+    <div>
+        <div>
+            <img src="./images/presentation1.jpg">
+            <div>
+                <p>...des trajets accessibles</p>
+                <p><strong>Contribuez à notre communauté en plaine expansion.</strong>Le premier trajet 100% gartuit!*</p>
+            </div>
+            <div onclick="location.href='trajets.php';">
+                <p>Réserver</p>
+                <i class="fa-solid fa-angles-right"></i>
+            </div>
+        </div>
+        <div>
+            <img src="./images/presentation2.jpg">
+            <div>
+                <p>...du partage</p>
+                <p><strong>Participez a l'expension du projet, en sauvant l'environnement!</strong>Et gagnez jusqu'à 25€/jour*</p>
+            </div>
+            <div onclick="location.href='proposer-location.php';">
+                <p>Proposer une location</p>
+                <i class="fa-solid fa-angles-right"></i>
+            </div>
+        </div>
+        <div>
+            <img src="./images/presentation3.jpg">
+            <div>
+                <p>...de l'aide</p>
+                <p>Aidez nous à ameliorer le site<strong>Une question ? On peut vous aider !</strong>Prenez part a l'écomobilités</p>
+            </div>
+            <div onclick="location.href='contact.php';">
+                <p>Contact</p>
+                <i class="fa-solid fa-angles-right"></i>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div id="milieu">
+    <h1>Ces véhicules sont actuellement disponibles à la location !</h1>
+  </div>
+  <div id="enavant">
+    <div onclick="location.href='tesla.php';">
+        <img src="./images/annonces/tesla.jpeg">
+        <h1>Tesla MODEL S</h1>
+        <h3>Proprietaire : Thibaut</h3>
+        <h3>Prix : 20€/jour</h3>
+        <h3>Autonomie : 630 km</h3>
+        <h3>Puissance : 85kW</h3>
+    </div>
+    <div>
+      <img src="./images/annonces/fiatlaprima.jfif">
+        <h1>Fiat 500 La prima</h1>
+        <h3>Proprietaire : David</h3>
+        <h3>Prix : 16€/jour</h3>
+        <h3>Autonomie : 312 km</h3>
+        <h3>Puissance : 118 ch</h3>
+    </div>
+    <div>
+      <img src="./images/annonces/zoe.jfif">
+        <h1>Renault Zoe LIFE R90</h1>
+        <h3>Proprietaire : Mélanie</h3>
+        <h3>Prix : 9€/jour</h3>
+        <h3>Autonomie : 390 km</h3>
+        <h3>Puissance : 118 ch</h3>
+    </div>
+    <div>
+        <img src="./images/annonces/2008.jfif">
+        <h1>Peugeot e-2008</h1>
+        <h3>Proprietaire : Mathias</h3>
+        <h3>Prix : 17€/jour</h3>
+        <h3>Autonomie : 188 km</h3>
+        <h3>Puissance : 136ch</h3>
+    </div>
+    <div>
+        <img src="./images/annonces/etron.jpg">
+        <h1>Audi e-tron</h1>
+        <h3>Proprietaire : Samantha</h3>
+        <h3>Prix : 25€/jour</h3>
+        <h3>Autonomie : 286 km</h3>
+        <h3>Puissance : 313 CH</h3>
+    </div>
+    <div>
+      <img src="./images/annonces/kangoo.jfif">
+        <h1>RENAULT KANGOO EXPRESS ZE</h1>
+        <h3>Proprietaire : Mélanie</h3>
+        <h3>Prix : 9€/jour</h3>
+        <h3>Autonomie : 118 km</h3>
+        <h3>Puissance : 44kw / 60ch</h3>
+    </div>
+</div>
+  <div id="voirplus">
+      <div onclick="location.href='location.php';">
+          <h1>Tout découvrir</h1>
+      </div>
+  </div>
+  <div id="bas">
+    <div>
+        <div>
+            <h4>Le co-voiturage</h4>
+            <h5>Des dizaine d'usager prêt a partager un trajet autour de chez vous ! Bon pour la santé et l'environnement, le covoiturage diminue le trafic sur les grands axes et la pollution !</h5>
+            <div>
+                <h5 onclick="location.href='trajets.php';">Commencer</h5>
+            </div>
+        </div>
+        <div></div>
+    </div>
+    <div>
+        <div></div>
+        <div>
+            <h4>L'auto-partage</h4>
+            <h5>Des voitures libres, disponibles juste pour vous ! Ne vous occupez plus de l'entretien, reservez, et le véhicule est a vous !</h5>
+            <div>
+                <h5 onclick="location.href='autopartage.php';">Réserver</h5>
+                <h5 onclick="location.href='autopartage.php';">Réserver</h5>
+            </div>
+        </div>
+    </div>
+  </div>
+  <footer>
+    <div>
+        <p onclick="location.href='./contact.php'">Mon profil</p>
+        <p onclick="location.href='./contact.php'">Mes projets</p>
+        <p onclick="location.href='./contact.php'">Me contacter</p>
+        <p onclick="location.href='./Mentions'">Credits</p>
+    </div>
+    <div>
+        <i class="fa-regular fa-file-lines"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-regular fa-envelope"></i>
+        <i class="fa-solid fa-mobile-screen"></i>
+    </div>
+    </footer>
+</body>
+</html>

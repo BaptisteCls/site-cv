@@ -1,0 +1,98 @@
+#tete img{
+    width: 120px;
+    border-radius: 50%;
+    border: solid 6px #34ADD1;
+}
+
+#tete{
+    margin-top: 80px;
+    width: 90%;
+    margin-left: 5%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    border-bottom: solid 2px gray;
+}
+
+.t1 h2{
+    font-size: 70px;
+}
+.t1 h3{
+    font-size: 40px;
+}
+.t1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 190px;
+}
+.t3{
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+    height: auto;
+    width: 380px;
+}
+
+.t3 p, h3{
+    margin: 0;
+}
+.t3 p{
+    font-style: italic;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.637);
+    font-size: 20px;
+}
+
+.t2{
+    display: flex;
+    align-items: center;
+    width: 500px;
+    justify-content: space-between;
+    font-size: 30px;
+}
+
+#main{
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+    justify-content: space-between;
+}
+
+#navv{
+    border-right: solid 2px gray;
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-bottom: 5%;
+}
+
+#page{
+    width: 80%;
+}
+
+#page h2{
+    font-size: 1.9rem;
+}
+
+#page p{
+    padding-left: 17.5%;
+    width: 65%;
+    color: rgba(0, 0, 0, 0.637);
+}
+
+section div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin-left: 0;
+}
+
+section>p{
+    color: black;
+    margin-bottom: 100px;
+}
+
+#page img{
+    width: 100%;
+}
