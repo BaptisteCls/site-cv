@@ -66,12 +66,21 @@
     margin-bottom: 5%;
 }
 
+#navv p{
+    margin-bottom: 2rem;
+}
+
+#navv p:hover{
+    cursor: pointer;
+}
+
 #page{
     width: 80%;
 }
 
 #page h2{
     font-size: 1.9rem;
+    margin-left: 2%;
 }
 
 #page p{
@@ -95,4 +104,20 @@ section>p{
 
 #page img{
     width: 100%;
+}
+
+.btn{
+    margin-left: 32%;
+    width: 14rem;
+    height: 3.5rem;
+    border-radius: 40px;
+    background-color: #34ADD1;
+    margin-bottom: 5rem;
+}
+
+.btn p{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: white;
 }

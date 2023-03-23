@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=0.8">
-  <title>Accueil - Mon profil</title>
+  <title>Infos - Mon profil</title>
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/profil.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -68,16 +68,20 @@
     </div>
     <div id="main">
         <div id="navv">
-            <p>truc 1</p>
-            <p>truc 2</p>
-            <p>truc n</p>
+            <p onclick="location.href='profil.html#presentation';"><i class="fa-solid fa-chevron-right"></i> Présentation</p>
+            <p onclick="location.href='profil.html#experience';"><i class="fa-solid fa-chevron-right"></i> Expérience professionnelle</p>
+            <p onclick="location.href='profil.html#competences';"><i class="fa-solid fa-chevron-right"></i> Compétences</p>
+            <p onclick="location.href='profil.html#education';"><i class="fa-solid fa-chevron-right"></i> Éducation</p>
+            <p onclick="location.href='profil.html#coordonees';"><i class="fa-solid fa-chevron-right"></i> Coordonées</p>
+            <p onclick="location.href='profil.html#loisirs';"><i class="fa-solid fa-chevron-right"></i> Loisirs</p>
+            <p onclick="location.href='profil.html#cv';"><i class="fa-solid fa-chevron-right"></i> CV</p>
         </div>
         <div id="page">
-            <section>
+            <section id="experience">
                 <h2>Présentation</h2>
-                <p>lorem ispuù</p>
+                <p>Depuis mon enfance, l'informatique  est ma passion.<br><br> J'ai commencé à travailler à l'âge de 16 ans, tout en poursuivant mes études, ce qui m'a permis de m'ouvrir au monde professionnel et à travailler mon autonomie.<br><br> Je suis également extrêmement curieux et constamment à la recherche d'activité à explorer. <br><br>En tant que travailleur assidu et passionné, je suis convaincu que je peux apporter une contribution significative à une entreprise.</p>
             </section>
-            <section>
+            <section id="competences">
                 <h2>Expérience professionnelle</h2>
                 <div>
                     <p><i class="fa-solid fa-circle-chevron-right"></i>    École petit quinquin, Lomme </p>
@@ -90,22 +94,46 @@
                 </div>
                 <p>Employés polyvalent, Livreur de pizza</p>
             </section>
-            <section>
-                <h2>Compétence</h2>
+            <section id="education">
+                <h2>Compétences</h2>
                 <p><img src="./images/competence.jpg"></p>
                 <p>Le BUT Informatique me permet d'acquérir des compétences en programmation, web, ... De plus la formation donne une vue globale du monde professionnel, grâce à des formations en gestion de projet, gestion d'entreprise, comptabilité, économie et droit. </p>
             </section>
-            <section>
+            <section id="coordonees">
                 <h2>Éducation</h2>
-                <p></p>
+                <div>
+                    <p><i class="fa-solid fa-circle-chevron-right"></i> BUT Informatique, IUT A - Université de Lille</p>
+                    <p>2022 - 2025</p>
+                </div>
+                <p>[En cours] BUT Informatique, avec possibilité de faire un parcours "Déploiement d'applications communicantes et sécurisées"</p>
+                <div>
+                    <p><i class="fa-solid fa-circle-chevron-right"></i> Lycée parcours géneral, lycée Jean Perrin à Lambersart </p>
+                    <p>2019 - 2022</p>
+                </div>
+                <p>Parcours géneral, avec spécialités Numérique et Sciences Informatiques et Mathématiques<br>Baccalauréat obtenu avec mention</p>
+                <div>
+                    <p><i class="fa-solid fa-circle-chevron-right"></i> Collège Saint Odile à Lambersart </p>
+                    <p>2015 - 2019</p>
+                </div>
+                <p>Brevet des collèges obtenu avce mention "Bien"</p>
             </section>
-            <section>
+            <section id="loisirs">
                 <h2>Coordonées</h2>
-                <p></p>
+                <p>Adresse : 17 rue du Parc Tournebride, 59160 Capinghem, App22<br><br>
+                    Numéro : 06.25.32.02.16<br><br>
+                    E-mail personnel : baptiste.collesson@gmail.com<br><br>
+                    E-mail de l'univeristé : baptiste.collesson.etu@univ-lille.fr<br><br>
+                </p>
+            </section>
+            <section id="cv">
+                <h2>Loisirs</h2>
+                <p>Je suis passionné par les technologies en général, notamment l'informatique, le bricolage, l'impression 3D et la réalité virtuelle.<br><br> J'aime explorer les dernières avancées technologiques et découvrir de nouvelles façons d'utiliser la technologie pour améliorer ma vie quotidienne.<br><br> J'aime également participer à des projets DIY, en construisant des gadgets électroniques ou en modifiant des appareils existants pour les adapter à mes besoins.
+                </p>
             </section>
             <section>
-                <h2>Loisirs</h2>
-                <p></p>
+                <h2>CV</h2>
+                <p>Mon CV est mis à disposition <br>Téléchargement ci dessous :</p>
+                <a href="./dl/cv.pdf" download="Baptiste_COLLESSON_CV"><div class="btn"><p>Téléchargement ici</p></div></a>
             </section>
         </div>
     </div>
