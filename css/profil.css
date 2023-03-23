@@ -74,6 +74,35 @@
     cursor: pointer;
 }
 
+#nav_btn{
+    color: white;
+    background-color: #34ADD1;
+    border: black .3rem  solid;
+    position: fixed;
+    width: 4.2rem;
+    height: 4.2rem;
+    top : 10%;
+    left: 1.5%;
+    z-index: 10;
+    justify-content: center;
+    align-content: center;
+    display: none;
+}
+
+#nav_btn:hover{
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    border-color: #34ADD1;
+}
+
+#nav_btn i{
+    align-self: center;
+    font-size: 3.3rem;
+}
+
+
+
 #page{
     width: 80%;
 }
@@ -113,6 +142,8 @@ section>p{
     border-radius: 40px;
     background-color: #34ADD1;
     margin-bottom: 5rem;
+    display: flex;
+    justify-content: center;
 }
 
 .btn p{
@@ -120,4 +151,38 @@ section>p{
     padding: 0;
     text-decoration: none;
     color: white;
+}
+
+
+@media (max-width: 1000px){
+    #navv{
+        display: none;
+        border: none;
+        padding: 0;
+        margin: 0;
+        background-color: #34ADD1
+    }
+
+    #navv p{
+        color: white;
+    }
+
+    #nav_btn{
+        display: flex;
+    }
+
+    #tete{
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 1.5rem;
+    }
+
+    #page p{
+        width: 80%;
+        padding-left: 25%;
+    }
+
+    #section div{
+        width: 95%;
+    }
 }

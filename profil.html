@@ -53,7 +53,7 @@
     <div onclick="monter()" class="monter" id="monter">
         <i class="fa-regular fa-circle-up"></i>
     </div>
-    <div id="tete">
+    <div id="tete"  onclick="navFermer()">
         <div class="t1"><h2><i class="fa-solid fa-address-card"></i></h2>
             <h3>Profil</h3>
         </div>
@@ -66,7 +66,26 @@
         </div>
     <div class="not"></div>
     </div>
+    <script>
+        function nav(){
+            var btn = document.getElementById("nav_btn");
+            var nav  =document.getElementById("navv");
+            if(nav.style.display == "block"){
+                nav.style.display="none";
+            }else{
+                nav.style.display="block";
+            }
+        }
+
+        function navFermer(){
+            var nav  =document.getElementById("navv");
+            if(nav.style.display == "block"){
+                nav();
+            }
+        }
+    </script>
     <div id="main">
+        <div id="nav_btn" onclick="nav()"><i class="fa-solid fa-bars"></i></div>
         <div id="navv">
             <p onclick="location.href='profil.html#presentation';"><i class="fa-solid fa-chevron-right"></i> Présentation</p>
             <p onclick="location.href='profil.html#experience';"><i class="fa-solid fa-chevron-right"></i> Expérience professionnelle</p>
@@ -76,7 +95,7 @@
             <p onclick="location.href='profil.html#loisirs';"><i class="fa-solid fa-chevron-right"></i> Loisirs</p>
             <p onclick="location.href='profil.html#cv';"><i class="fa-solid fa-chevron-right"></i> CV</p>
         </div>
-        <div id="page">
+        <div id="page" onclick="navFermer()">
             <section id="experience">
                 <h2>Présentation</h2>
                 <p>Depuis mon enfance, l'informatique  est ma passion.<br><br> J'ai commencé à travailler à l'âge de 16 ans, tout en poursuivant mes études, ce qui m'a permis de m'ouvrir au monde professionnel et à travailler mon autonomie.<br><br> Je suis également extrêmement curieux et constamment à la recherche d'activité à explorer. <br><br>En tant que travailleur assidu et passionné, je suis convaincu que je peux apporter une contribution significative à une entreprise.</p>
