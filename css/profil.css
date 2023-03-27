@@ -136,8 +136,7 @@ section>p{
 }
 
 .btn{
-    margin-left: 32%;
-    width: 14rem;
+    width: 16rem;
     height: 3.5rem;
     border-radius: 40px;
     background-color: #34ADD1;
@@ -146,7 +145,13 @@ section>p{
     justify-content: center;
 }
 
-.btn p{
+#in_btn{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.btn a{
     margin: 0;
     padding: 0;
     text-decoration: none;

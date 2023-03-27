@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=0.8">
-  <title>Infos - Mon profil</title>
+  <title>Contact - Divers contacts</title>
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/contact.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -58,9 +58,9 @@
             navigator.clipboard.writeText("17 rue du Parc Tournebride, 59160 Capinghem, Appartement 22");
             alert("Copié dans le presse papié : 17 rue du Parc Tournebride, 59160 Capinghem, Appartement 22")
         }
-        function copyAdress(){
-            navigator.clipboard.writeText("17 rue du Parc Tournebride, 59160 Capinghem, Appartement 22");
-            alert("Copié dans le presse papié : 17 rue du Parc Tournebride, 59160 Capinghem, Appartement 22")
+        function copyNumber(){
+            navigator.clipboard.writeText("0625320216");
+            alert("Copié dans le presse papié : 0625320216")
         }
     </script>
     <div id="main">
@@ -73,9 +73,9 @@
                 <div><i class="fa-solid fa-house" onclick="copyAdress()"></i><p>17 rue du Parc Tournebride, 59160 Capinghem, Appartement 22</p></div>
                 <div><i class="fa-brands fa-linkedin" onclick="location.href='https://www.linkedin.com/in/baptiste-collesson-251843269/'"></i><p>Baptiste Collesson</p></div>
                 <div><i class="fa-regular fa-envelope" onClick="window.location='mailto:pmarietti@wanadoo.fr?subject=je suis vraiment trrrrrré forttttt!!!!';"></i><p>baptiste.collesson.etu@univ-lille.fr</p></div>
-                <div><i class="fa-solid fa-mobile-screen"></i><p>06.25.32.02.16</p></div>
+                <div><i class="fa-solid fa-mobile-screen" onclick="copyNumber()"></i><p>06.25.32.02.16</p></div>
             </div>
-            <div id="profil_btn">
+            <div id="profil_btn" onclick="location.href='./profil.html'">
                 <h2>Voir le profil</h2>
             </div>            
         </div>

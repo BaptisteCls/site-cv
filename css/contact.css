@@ -79,7 +79,7 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus{
 
 #reseaux{
     margin-top: 6rem;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
     width: 100%;
     height: auto;
     display: flex;
@@ -127,4 +127,22 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus{
 }
 #reseaux>div:last-child>div:hover, input[type="submit"]{
     cursor: pointer;
+}
+
+#profil_btn{
+    background-color: #34ADD1;
+    color: white;
+    width: 12.5rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 5rem;
+    border: #34addd solid 3px;
+    margin-bottom: 5rem;
+}
+
+#profil_btn:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #34ADD1;
 }
