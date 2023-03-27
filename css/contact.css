@@ -2,7 +2,7 @@
 #titre{
     margin-bottom: 5rem;
     width: 100%;
-    background-color: #d3a8ec;
+    background-color: #34ADD1;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -11,11 +11,6 @@
 #titre>p:first-child{
     font-size: 5rem;
     font-weight: 400;
-}
-#titre>p:last-child{
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: rgb(49, 49, 49);
 }
 
 form>div:not(:last-child){
@@ -75,7 +70,11 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus{
     border: .15rem solid #555;
 }
 
-
+#page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
 #reseaux{
@@ -85,6 +84,20 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus{
     height: auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    background-color: #34ADD1;
+    width: 700px;
+    max-width: 80%;
+}
+
+#reseaux>div{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 1rem;
+    justify-content: left;
+    border-top: #ffffff 2px solid;
+    color: #ffffff;
 }
 #reseaux>div:first-child{
     align-self: center;
@@ -94,17 +107,6 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus{
     background-color: #d3a8ec;
     font-family: Ubuntu;
     font-size: 2.3rem;
-}
-#reseaux>div:last-child{
-    align-self: center;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 80%;
-    background-color: #eee;
-    font-family: Ubuntu;
-    font-size: 2rem;
-    padding-bottom: 5rem;
 }
 #reseaux>div:last-child>div{
     display: flex;
@@ -116,6 +118,12 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus{
     margin-right: 2rem;
     font-size: 3.5rem;
     align-self: center;
+    width: 5rem;
+    height: 5rem;
+}
+
+#reseaux i:hover{
+    cursor: pointer;
 }
 #reseaux>div:last-child>div:hover, input[type="submit"]{
     cursor: pointer;

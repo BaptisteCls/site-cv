@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.8">
+  <title>Infos - Mon profil</title>
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="//db.onlinewebfonts.com/c/75914226e45d53c888d99c55e1033690?family=Ubisoft+Sans" rel="stylesheet" type="text/css"/>
+  <link rel="shortcut icon" href="./images/logo/logo.png" type="image/x-icon">
+</head>
+<script src="./js/menu.js"></script>
+<script src="./js/slider.js"></script>
+<body>
+    <header>
+        <div><img onclick="location.href='index.html';" src="./images/logo/titre.png" alt="UbiSoftMobilities"></div>
+        <div>
+            <div><h1><i class="fa-regular fa-user"></i> PROFIL</h1>
+                <nav>
+                    <div>
+                        <h2 onclick="location.href='trajets.php';">Se deplacer !<i class="fa-solid fa-chevron-right"></i></h2>
+                        <h2 onclick="location.href='proposer-trajet.php';">Proposer un trajet<i class="fa-solid fa-chevron-right"></i></h2>
+                        <h2 onclick="location.href='mes-trajets.php';">Mes trajets<i class="fa-solid fa-chevron-right"></i></h2>
+                        <h2 onclick="location.href='historique-trajets.php';">Historique<i class="fa-solid fa-chevron-right"></i></h2>
+                        <h2 onclick="location.href='info-covoiturage.php';">Infos<i class="fa-solid fa-chevron-right"></i></h2>
+                    </div>
+                </nav>
+            </div>
+            <div><h1><i class="fa-regular fa-file"></i> MES PROJETS</h1>
+                <nav>
+                    <div>
+                        <h2 onclick="location.href='location.php';">Louer<i class="fa-solid fa-chevron-right"></i></h2>
+                        <h2 onclick="location.href='proposer-location.php';">Proposer une location<i class="fa-solid fa-chevron-right"></i></h2>
+                        <h2 onclick="location.href='mes-locations.php';">Mes locations<i class="fa-solid fa-chevron-right"></i></h2>
+                        <h2 onclick="location.href='historique-location.php';">Historique<i class="fa-solid fa-chevron-right"></i></h2>
+                        <h2 onclick="location.href='info-location.php';">Infos<i class="fa-solid fa-chevron-right"></i></h2>
+                    </div>
+                </nav>
+            </div>
+            <div><h1><i class="fa-regular fa-envelope"></i> CONTACT</h1>
+                <nav>
+                    <div>
+                        <h2 onclick="location.href='contact.php';">Contact<i class="fa-solid fa-chevron-right"></i></h2>
+                        <h2 onclick="location.href='faq.php';">FAQ<i class="fa-solid fa-chevron-right"></i></h2>
+                        <h2 onclick="location.href='accessibilite.php';">Accessibilité<i class="fa-solid fa-chevron-right"></i></h2>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div></div>
+    </header>    
+    <div onclick="monter()" class="monter" id="monter">
+        <i class="fa-regular fa-circle-up"></i>
+    </div>
+    <script>
+        function copyAdress(){
+            navigator.clipboard.writeText("17 rue du Parc Tournebride, 59160 Capinghem, Appartement 22");
+            alert("Copié dans le presse papié : 17 rue du Parc Tournebride, 59160 Capinghem, Appartement 22")
+        }
+        function copyAdress(){
+            navigator.clipboard.writeText("17 rue du Parc Tournebride, 59160 Capinghem, Appartement 22");
+            alert("Copié dans le presse papié : 17 rue du Parc Tournebride, 59160 Capinghem, Appartement 22")
+        }
+    </script>
+    <div id="main">
+        <div id="page">
+            <section id="titre">
+                <p>Contact</p>
+            </section>
+            <div id="reseaux">
+                <h2>Réseaux</h2>
+                <div><i class="fa-solid fa-house" onclick="copyAdress()"></i><p>17 rue du Parc Tournebride, 59160 Capinghem, Appartement 22</p></div>
+                <div><i class="fa-brands fa-linkedin" onclick="location.href='https://www.linkedin.com/in/baptiste-collesson-251843269/'"></i><p>Baptiste Collesson</p></div>
+                <div><i class="fa-regular fa-envelope" onClick="window.location='mailto:pmarietti@wanadoo.fr?subject=je suis vraiment trrrrrré forttttt!!!!';"></i><p>baptiste.collesson.etu@univ-lille.fr</p></div>
+                <div><i class="fa-solid fa-mobile-screen"></i><p>06.25.32.02.16</p></div>
+            </div>
+            <div id="profil_btn">
+                <h2>Voir le profil</h2>
+            </div>            
+        </div>
+    </div>
+  <footer>
+    <div>
+        <p onclick="location.href='./contact.php'">Mon profil</p>
+        <p onclick="location.href='./contact.php'">Mes projets</p>
+        <p onclick="location.href='./contact.php'">Me contacter</p>
+        <p onclick="location.href='./Mentions'">Credits</p>
+    </div>
+    <div>
+        <i class="fa-regular fa-file-lines"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-regular fa-envelope"></i>
+        <i class="fa-solid fa-mobile-screen"></i>
+    </div>
+    </footer>
+</body>
+</html>
