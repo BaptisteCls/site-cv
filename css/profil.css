@@ -122,8 +122,13 @@ section div{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 85%;
+    width: 100%;
     margin-left: 0;
+}
+
+section div p{
+    margin: 0;
+    padding: 0;
 }
 
 section>p{
@@ -158,6 +163,10 @@ section>p{
     color: white;
 }
 
+#page div p{
+    color: #236c83;
+}
+
 
 @media (max-width: 1000px){
     #navv{
@@ -173,7 +182,7 @@ section>p{
     }
 
     #nav_btn{
-        display: flex;
+        display: none;
     }
 
     #tete{
@@ -183,11 +192,18 @@ section>p{
     }
 
     #page p{
-        width: 80%;
-        padding-left: 25%;
+        width: 100%;
+        margin-left: 0;
     }
 
-    #section div{
-        width: 95%;
+    #page img{
+        width: 120%;
+        margin-left: -12%;
     }
+
+    section div{
+        width: 100%;
+        justify-content: center;
+    }
+
 }

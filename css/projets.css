@@ -21,3 +21,9 @@ section p{
     text-shadow: 0 0 .5rem rgb(255, 187, 0);
     margin-bottom: 8rem;
 }
+
+@media (max-width: 1000px){
+    section{
+        margin-top: 3rem;
+    }
+}

@@ -264,4 +264,23 @@ footer>div:first-child>p:hover, footer i:hover, nav li:hover, .monter:hover, hea
         text-align: left;
         width: 80%;
     }
+
+    header>div:nth-child(2), header>div:last-child{
+        display: none;
+    }
+
+    header>div>div:hover>nav{
+        display: none;
+    }
+    
+    header{
+        height: 3.9rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header img{
+        margin: 0;
+        padding: 0;
+    }
 }
