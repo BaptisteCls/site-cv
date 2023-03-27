@@ -14,42 +14,36 @@
 <script src="./js/slider.js"></script>
 <body>
     <header>
-        <div><img onclick="location.href='index.html';" src="./images/logo/titre.png" alt="UbiSoftMobilities"></div>
+        <div><img onclick="location.href='index.html';" src="./images/logo/titre.png" alt="home"></div>
         <div>
-            <div><h1><i class="fa-regular fa-user"></i> PROFIL</h1>
+            <div><h1 onclick="location.href='profil.html#';"><i class="fa-regular fa-user"></i> PROFIL</h1>
                 <nav>
                     <div>
-                        <h2 onclick="location.href='trajets.php';">Se deplacer !<i class="fa-solid fa-chevron-right"></i></h2>
-                        <h2 onclick="location.href='proposer-trajet.php';">Proposer un trajet<i class="fa-solid fa-chevron-right"></i></h2>
-                        <h2 onclick="location.href='mes-trajets.php';">Mes trajets<i class="fa-solid fa-chevron-right"></i></h2>
-                        <h2 onclick="location.href='historique-trajets.php';">Historique<i class="fa-solid fa-chevron-right"></i></h2>
-                        <h2 onclick="location.href='info-covoiturage.php';">Infos<i class="fa-solid fa-chevron-right"></i></h2>
+                        <h2 onclick="location.href='profil.html#presentation';">Présentation<i class="fa-solid fa-chevron-right"></i></h2>
+                        <h2 onclick="location.href='profil.html#experience';">Expérience professionnelle<i class="fa-solid fa-chevron-right"></i></h2>
+                        <h2 onclick="location.href='profil.html#competences';">Compétences<i class="fa-solid fa-chevron-right"></i></h2>
+                        <h2 onclick="location.href='profil.html#education';">Éducation<i class="fa-solid fa-chevron-right"></i></h2>
+                        <h2 onclick="location.href='profil.html#loisirs';">Loisirs<i class="fa-solid fa-chevron-right"></i></h2>
+                        <h2 onclick="location.href='profil.html#cv';">CV<i class="fa-solid fa-chevron-right"></i></h2>
                     </div>
                 </nav>
             </div>
-            <div><h1><i class="fa-regular fa-file"></i> MES PROJETS</h1>
+            <div><h1 onclick="location.href='projets.html';"><i class="fa-regular fa-file"></i> MES PROJETS</h1>
                 <nav>
                     <div>
-                        <h2 onclick="location.href='location.php';">Louer<i class="fa-solid fa-chevron-right"></i></h2>
-                        <h2 onclick="location.href='proposer-location.php';">Proposer une location<i class="fa-solid fa-chevron-right"></i></h2>
-                        <h2 onclick="location.href='mes-locations.php';">Mes locations<i class="fa-solid fa-chevron-right"></i></h2>
-                        <h2 onclick="location.href='historique-location.php';">Historique<i class="fa-solid fa-chevron-right"></i></h2>
-                        <h2 onclick="location.href='info-location.php';">Infos<i class="fa-solid fa-chevron-right"></i></h2>
+                        <h2 onclick="location.href='projets.html';">Jeu en lignes de texte : "PedagoFarm"<i class="fa-solid fa-chevron-right"></i></h2>
+                        <h2 onclick="location.href='projets.html';">Logiciel carré de Polybe<i class="fa-solid fa-chevron-right"></i></h2>
+                        <h2 onclick="location.href='projets.html';">Deploiement d'un poste et d'un réseau<i class="fa-solid fa-chevron-right"></i></h2>
+                        <h2 onclick="location.href='projets.html';">Gestion de données<i class="fa-solid fa-chevron-right"></i></h2>
+                        <h2 onclick="location.href='projets.html';">L'écomobilité en entreprise<i class="fa-solid fa-chevron-right"></i></h2>
                     </div>
                 </nav>
             </div>
-            <div><h1><i class="fa-regular fa-envelope"></i> CONTACT</h1>
-                <nav>
-                    <div>
-                        <h2 onclick="location.href='contact.php';">Contact<i class="fa-solid fa-chevron-right"></i></h2>
-                        <h2 onclick="location.href='faq.php';">FAQ<i class="fa-solid fa-chevron-right"></i></h2>
-                        <h2 onclick="location.href='accessibilite.php';">Accessibilité<i class="fa-solid fa-chevron-right"></i></h2>
-                    </div>
-                </nav>
+            <div><h1 onclick="location.href='contact.html';"><i class="fa-regular fa-envelope"></i> CONTACT</h1>
             </div>
         </div>
         <div></div>
-    </header>    
+    </header>      
     <div onclick="monter()" class="monter" id="monter">
         <i class="fa-regular fa-circle-up"></i>
     </div>
@@ -72,7 +66,7 @@
                 <h2>Réseaux</h2>
                 <div><i class="fa-solid fa-house" onclick="copyAdress()"></i><p>17 rue du Parc Tournebride, 59160 Capinghem, Appartement 22</p></div>
                 <div><i class="fa-brands fa-linkedin" onclick="location.href='https://www.linkedin.com/in/baptiste-collesson-251843269/'"></i><p>Baptiste Collesson</p></div>
-                <div><i class="fa-regular fa-envelope" onClick="window.location='mailto:pmarietti@wanadoo.fr?subject=je suis vraiment trrrrrré forttttt!!!!';"></i><p>baptiste.collesson.etu@univ-lille.fr</p></div>
+                <div><i class="fa-regular fa-envelope" onClick="window.location='baptiste.collesson.etu@univ-lille.fr?subject=Contact';"></i><p>baptiste.collesson.etu@univ-lille.fr</p></div>
                 <div><i class="fa-solid fa-mobile-screen" onclick="copyNumber()"></i><p>06.25.32.02.16</p></div>
             </div>
             <div id="profil_btn" onclick="location.href='./profil.html'">
@@ -80,19 +74,19 @@
             </div>            
         </div>
     </div>
-  <footer>
-    <div>
-        <p onclick="location.href='./contact.php'">Mon profil</p>
-        <p onclick="location.href='./contact.php'">Mes projets</p>
-        <p onclick="location.href='./contact.php'">Me contacter</p>
-        <p onclick="location.href='./Mentions'">Credits</p>
-    </div>
-    <div>
-        <i class="fa-regular fa-file-lines"></i>
-        <i class="fa-brands fa-linkedin"></i>
-        <i class="fa-regular fa-envelope"></i>
-        <i class="fa-solid fa-mobile-screen"></i>
-    </div>
+    <footer>
+        <div>
+            <p onclick="location.href='./profil.html'">Mon profil</p>
+            <p onclick="location.href='./projets.html'">Mes projets</p>
+            <p onclick="location.href='./contact.html'">Me contacter</p>
+            <p onclick="location.href='./mentions.html'">Credits</p>
+        </div>
+        <div>
+            <a href="./dl/cv.pdf" download="Baptiste_COLLESSON_CV"><i class="fa-regular fa-file-lines"></i></a>
+            <i onclick="location.href='https://www.linkedin.com/in/baptiste-collesson-251843269/'" class="fa-brands fa-linkedin"></i>
+            <i class="fa-regular fa-envelope" onClick="window.location='mailto:baptiste.collesson.etu@univ-lille.fr?subject=Contact';"class="fa-regular fa-envelope"></i>
+            <i onclick="copyNumber()" class="fa-solid fa-mobile-screen"></i>
+        </div>
     </footer>
 </body>
 </html>

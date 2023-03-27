@@ -2,7 +2,7 @@
 #titre{
     margin-bottom: 5rem;
     width: 100%;
-    background-color: #34ADD1;
+    background-color: #d3a8ec;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -85,7 +85,7 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #34ADD1;
+    background-color: #d3a8ec;
     width: 700px;
     max-width: 80%;
 }
@@ -130,19 +130,23 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus{
 }
 
 #profil_btn{
-    background-color: #34ADD1;
+    background-color: #d3a8ec;
     color: white;
     width: 12.5rem;
     height: 4rem;
     display: flex;
     justify-content: center;
     border-radius: 5rem;
-    border: #34addd solid 3px;
+    border: #d3a8ec solid 3px;
     margin-bottom: 5rem;
 }
 
 #profil_btn:hover {
     cursor: pointer;
     background-color: white;
-    color: #34ADD1;
+    color: #d3a8ec;
+}
+
+.space{
+    margin-bottom: 20rem;
 }

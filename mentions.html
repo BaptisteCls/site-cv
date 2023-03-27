@@ -3,14 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=0.8">
-  <title>Accueil - Mon profil</title>
+  <title>Contact - Divers contacts</title>
   <link rel="stylesheet" href="./css/header.css">
-  <link rel="stylesheet" href="./css/projets.css">
+  <link rel="stylesheet" href="./css/contact.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="//db.onlinewebfonts.com/c/75914226e45d53c888d99c55e1033690?family=Ubisoft+Sans" rel="stylesheet" type="text/css"/>
   <link rel="shortcut icon" href="./images/logo/logo.png" type="image/x-icon">
 </head>
 <script src="./js/menu.js"></script>
+<script src="./js/slider.js"></script>
 <body>
     <header>
         <div><img onclick="location.href='index.html';" src="./images/logo/titre.png" alt="home"></div>
@@ -42,7 +43,10 @@
             </div>
         </div>
         <div></div>
-    </header>
+    </header>      
+    <div onclick="monter()" class="monter" id="monter">
+        <i class="fa-regular fa-circle-up"></i>
+    </div>
     <script>
         function copyAdress(){
             navigator.clipboard.writeText("17 rue du Parc Tournebride, 59160 Capinghem, Appartement 22");
@@ -52,15 +56,17 @@
             navigator.clipboard.writeText("0625320216");
             alert("Copié dans le presse papié : 0625320216")
         }
-    </script>      
-    <div onclick="monter()" class="monter" id="monter">
-        <i class="fa-regular fa-circle-up"></i>
+    </script>
+    <div id="main">
+        <div id="page">
+            <section id="titre">
+                <p>Crédits</p>
+            </section>
+            <p>Un grand merci à moi-même pour avoir créé ce site web incroyable ! Sans moi, il n'aurait jamais existé.</p>
+            <p>Je tiens également à remercier l'Université de Lille pour m'avoir fourni une formation de qualité qui m'a permis de tout faire moi-même.</p>
+            <p class="space">Et bien sûr, un merci spécial à moi-même pour avoir fait tout le travail.</p>
+        </div>
     </div>
-    <section id="main">
-        <img src="./images/travaux.jpeg">
-        <h1>En travaux !</h1>
-        <p>Je fait au plus vite pour que cela soit disponnible</p>
-    </section>
     <footer>
         <div>
             <p onclick="location.href='./profil.html'">Mon profil</p>
