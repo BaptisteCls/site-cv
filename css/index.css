@@ -323,6 +323,7 @@ body>p:hover, h1:hover{
     border-bottom-left-radius: 22%;
     border-bottom-right-radius: 22%;
     height: 35rem;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 #profil, #projet, #contact{
