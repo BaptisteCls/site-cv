@@ -24,9 +24,34 @@
             navigator.clipboard.writeText("0625320216");
             alert("Copié dans le presse papié : 0625320216")
         }
+
+        function openMenu(){
+            var bars = document.getElementById("bars")
+            var menu = document.getElementById("mobilemenu");
+            if(bars.className == "fa-solid fa-xmark"){
+                menu.style.transform = "translateX(-100%)";
+            }else{
+                menu.style.transform = "translateX(100%)";
+            }
+            bars.style.fontSize = "0px";
+            setTimeout(openSuite,200);
+        }     
+
+        function openSuite(){
+            var bars = document.getElementById("bars")
+            if(bars.className == "fa-solid fa-xmark"){
+                bars.className = "fa-solid fa-bars";
+                bars.style.fontSize = "2.7rem";
+            }else{
+                bars.className = "fa-solid fa-xmark";
+                bars.style.fontSize = "3rem";
+            }
+        }
     </script>
     <header>
+        <i onclick="openMenu()" id="bars" class="fa-solid fa-bars"></i>
         <div><img onclick="location.href='index.html';" src="./images/logo/titre.png" alt="home"></div>
+        <i id="notbars" class="fa-solid fa-bars"></i>
         <div>
             <div><h1 onclick="location.href='profil.html#';"><i class="fa-regular fa-user"></i> PROFIL</h1>
                 <nav>
@@ -56,6 +81,11 @@
         </div>
         <div></div>
     </header>    
+    <div id="mobilemenu" class="mobilemenu">
+        <h1 onclick="location.href='profil.html#';"><i class="fa-regular fa-user"></i> PROFIL</h1>
+        <h1 onclick="location.href='projets.html';"><i class="fa-regular fa-file"></i> MES PROJETS</h1>
+        <h1 onclick="location.href='contact.html';"><i class="fa-regular fa-envelope"></i> CONTACT</h1>
+    </div>
     <div onclick="monter()" class="monter" id="monter">
         <i class="fa-regular fa-circle-up"></i>
     </div>
@@ -76,7 +106,7 @@
     <div id="projet">
         <img src="./images/travaux.jpeg">
         <div class="t3">
-            <h3>Actuellement en travaux !</h3>
+            <h3>Section actuellement en travaux !</h3>
             <p>Désolé pour le dérangement</p>
         </div>
     </div>
